@@ -4,16 +4,15 @@ Aplicação para enviar informações de um formulário HTML formatando em uma p
 
 
 ## Ajustes
-- [x] Implementação do formulário HTML;
-- [x] front end mobile first;
-- [x] Animação CSS de feedback imediato para confimar envio e preenchimento da planilha;
-- [x] Adicionar cabeçalho para implementar logo da empresa;
-- [x] link da planilha para conferir itens já adicionados;
-- 
-- Autenticação JWT
-- Responsividade para versão desktop
-- Ajuste cores e divs
-- 
+- [x] ~~Implementação do formulário HTML~~;
+- [x] ~~front end mobile first~~;
+- [x] ~~Animação CSS de feedback imediato para confimar envio e preenchimento da planilha~~;
+- [x] ~~Adicionar cabeçalho para implementar logo da empresa~~;
+- [x] ~~link da planilha para conferir itens já adicionados~~;
+- [] Autenticação JWT
+- [] Responsividade para versão desktop
+- [] Ajuste cores e divs
+
 
 ## Installation
 
