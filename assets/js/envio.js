@@ -1,13 +1,15 @@
 
+const button = document.querySelector('button[class=enviar]');
 
 const addLoading = () =>{
     //muda o conteudo do botão pra imagem de loading
-    const button = document.querySelector('button[class=enviar]');
-    button.innerHTML = '<img src="assets/images/loading1.png" class="loading "></img>';
+    button.innerHTML = '<img src="assets/images/loading1.png" class="loading ">';
 }
 
-
-
+const removeLoading = () =>{
+    //muda o conteudo da imagem pra palavra
+    button.innerHTML = 'Enviar';
+}
 
 const handleSubmit = (event) => {
   
@@ -28,7 +30,7 @@ const handleSubmit = (event) => {
         },
         body: JSON.stringify({placa,descricao,data,valor})
 
-    });
+    }).then(() => removeLoading()); 
 }
 
 document.querySelector('form').addEventListener('submit',handleSubmit);
