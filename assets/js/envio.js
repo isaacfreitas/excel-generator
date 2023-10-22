@@ -1,7 +1,18 @@
 
+
+const addLoading = () =>{
+    //muda o conteudo do botão pra imagem de loading
+    const button = document.querySelector('button[class=enviar]');
+    button.innerHTML = '<img src="assets/images/loading1.png" class="loading "></img>';
+}
+
+
+
+
 const handleSubmit = (event) => {
   
     event.preventDefault(); //Não atualizar a pagina ao enviar o form
+    addLoading(); 
 
     const placa = document.querySelector('input[name=placa]').value;
     const descricao = document.querySelector('input[name=descricao]').value;

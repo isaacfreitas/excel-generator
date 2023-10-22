@@ -48,11 +48,13 @@ input[type="date"] {
 }
 
 button {
-  width: 50%;
+  width: 70%;
   background-color: #1e90ff;
   color: #fff; 
   font-weight: bold;
   cursor: pointer;
+
+  border-radius: 30px;
 }
 
 button:hover {
@@ -60,5 +62,18 @@ button:hover {
 }
 
 .loading{
-  width: 40px;
+  width: 30px;
+
+  animation: spin 1s infinite linear;
+}
+
+/* animação loading rodar */
+
+@keyframes spin {
+    from{
+      transform: rotate(0deg);
+    } 
+    to{
+      transform: rotate(360deg);
+    }
 }
