@@ -2,6 +2,7 @@
 
 const button = document.querySelector('button[class=enviar]');
 
+
 const addLoading = () => {
     //muda o conteudo do botão pra imagem de loading
     button.innerHTML = '<img src="assets/images/loading1.png" class="loading ">';
