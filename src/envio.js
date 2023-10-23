@@ -39,7 +39,8 @@ const handleSubmit = (event) => {
 
     }).then(() => {
         removeLoading(),
-        clearInputs();
+        clearInputs(),
+        alert('item cadastrado!'); // Substituir por veirifcado
     });
 }
 

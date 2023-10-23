@@ -6,63 +6,46 @@
 </head>
 
 <body>
-  <div class="top">
-    <img src="assets/images/logo-abax.png" id="logo">
-    <a href="https://docs.google.com/spreadsheets/d/1Vd_TMVywCRM5aoQJci8fIf8NvxN-o8NRMeQ2Qpna1zI/edit?usp=sharing">
-      CONFERIR ENVIOS</a>
+    <div class="top">
+      <img src="assets/images/logo-abax.png" id="logo">
+      <a href="https://docs.google.com/spreadsheets/d/1Vd_TMVywCRM5aoQJci8fIf8NvxN-o8NRMeQ2Qpna1zI/edit?usp=sharing">
+        CONFERIR ENVIOS</a>
+    </div>
 
-  </div>
-  <div class="container">
+    <div class="container">
 
-    <form id="form-identication">
-      <table id="form-identication" cellspacing="30">
-        <tr>
-          <td>
-            <label for="placa">Placa</label>
-            <input type="text" id="placa" name="placa" maxlength="7" placeholder="BRA2E19">
-          </td>
-          <td><label for="data">Data Aquisição</label>
-            <input type="date" id="data" name="data">
-          </td>
-          <td>
-            <label for="valor" maxlength="5" >Valor</label>
-            <input type="text" id="valor" name="valor" placeholder="R$12,34" pattern="[0-9]+(\.[0-9]{2})?">
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <label for="descricao" maxlength="100">Descrição</label>
-            <input type="text" id="descricao" name="descricao" maxlength="30"  placeholder="Modelo do carro,cor...">
-          </td>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            <button type="submit" class="enviar">Enviar</button>
-          </td>
-        </tr>
-      </table>
-    </form>
-
-    <!--  <form id="form-identication">
-      <label for="placa">Placa</label>
-      <input type="text" id="placa" name="placa" maxlength="7" ><br>
-
-      <label for="descricao">Descrição</label>
-      <input type="text" id="descricao" name="descricao" maxlength="30" ><br>
-
-      <label for="data">Data Aquisição</label>
-      <input type="date" id="data" name="data" ><br>
-
-      <label for="valor">Valor</label>
-      <input type="text" id="valor" name="valor" pattern="[0-9]+(\.[0-9]{2})?" ><br>
-
-      <button type="submit" class="enviar">
-        Enviar
-      </button>
-    </form> -->
-    <script src='src/envio.js'></script>
-  </div>
+      <form id="form-identication">
+        <table id="form-identication" cellspacing="30">
+          <tr>
+            <td>
+              <label for="placa">Placa</label>
+              <input type="text" id="placa" name="placa" maxlength="7" >
+            </td>
+            <td><label for="data">Data Aquisição</label>
+              <input type="date" id="data" name="data">
+            </td>
+            <td>
+              <label for="valor" maxlength="5">Valor</label>
+              <input type="number" id="valor" name="valor" " autocomplete="off" min="0" step="0.01"
+                data-number-to-fixed="2" data-number-stepfactor="100" pattern="[0-9]+(\.[0-9]{2})?">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <label for="descricao" maxlength="100">Descrição</label>
+              <input type="text" id="descricao" name="descricao" maxlength="30" >
+            </td>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <button type="submit" class="enviar">Enviar</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <script src='src/envio.js'></script>
+    </div>
 
 
 </body>
